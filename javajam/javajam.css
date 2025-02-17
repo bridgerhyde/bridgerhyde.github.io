@@ -70,13 +70,11 @@ footer {
     border-top: 2px;
 }
 
-hero-image {
-    border-style: none;
-    max-width: 100%;
-    height: auto;
-    padding-left: 10px;
-    padding-right: 10px; 
-    position: center;
+#hero-image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 img {
