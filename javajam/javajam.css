@@ -1,8 +1,11 @@
 body {
-    background-color: #FCEBB6;
+    background-color: #FCEBB6; 
+    background-image: url('/images/fadedroad50.jpg'); 
+    background-position: center; 
     color: #221811;
     font-family: Tahoma, Arial, sans-serif;
 }
+
 
 #wrapper {
     background-color: #FEFAEB;
@@ -25,9 +28,22 @@ h2 {
     color: #8C3826;
 }
 
+h4 {
+    background-color: #D2B48C; 
+    color: #221811;
+    text-indent: 10px;
+    
+}
+
+dt {
+    color: #8C3826;
+}
+
 nav {
     font-weight: bold;
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 footer {
@@ -36,3 +52,17 @@ footer {
     font-style: italic;
     text-align: center;
 }
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;}
+
+main {
+    margin: 30px;
+}
+
+details {
+    
+}
+
