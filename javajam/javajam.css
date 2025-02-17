@@ -35,10 +35,16 @@ h2 {
     color: #8C3826;
 }
 
+h3 {
+    color: #8C3826; 
+}
+
 h4 {
     background-color: #D2B48C; 
     color: #221811;
-    text-indent: 10px;
+    padding-left: .5em;
+    padding-bottom: .25em;
+    font-size: 1.2em;
     
 }
 
@@ -64,16 +70,31 @@ footer {
     border-top: 2px;
 }
 
+hero-image {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px; 
+    position: center;
+}
+
 img {
     border-style: none;
     max-width: 100%;
-    height: auto;}
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 main {
-    margin: 30px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
 }
 
 details {
-    
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
