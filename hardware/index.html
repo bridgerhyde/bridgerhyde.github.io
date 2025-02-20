@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handle It - Home Hardware Upgrades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home" onclick="showPage('home')">Home</a>
+        <a href="#services" onclick="showPage('services')">Services</a>
+        <a href="#contact" onclick="showPage('contact')">Contact</a>
+    </nav>
+    
+    <div id="home" class="container">
+        <h1>Upgrade Your Home with Modern Hardware</h1>
+        <p>Professional doorknob and doorstop installations for a modern aesthetic.</p>
+        <button onclick="showPage('services')">View Our Services</button>
+    </div>
+    
+    <div id="services" class="container" style="display: none;">
+        <h2>Our Services</h2>
+        <div class="card">
+            <h3>Doorknob Replacement</h3>
+            <p>Upgrade outdated doorknobs with modern, high-quality Kwikset knobs.</p>
+        </div>
+        <div class="card">
+            <h3>Free Doorstop Installation</h3>
+            <p>Every doorknob installation comes with a complementary doorstop.</p>
+        </div>
+    </div>
+    
+    <div id="contact" class="container" style="display: none;">
+        <h2>Get in Touch</h2>
+        <p>Schedule an appointment or ask us any questions!</p>
+        <p>Email: contact@handleit.com</p>
+        <p>Phone: (555) 123-4567</p>
+    </div>
+    
+    <script>
+        function showPage(page) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('services').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById(page).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
