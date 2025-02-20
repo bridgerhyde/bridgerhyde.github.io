@@ -4,81 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handle It - Home Hardware Upgrades</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .container {
-            padding: 20px;
-        }
-        .card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 400px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <a href="#home" onclick="showPage('home')">Home</a>
-        <a href="#services" onclick="showPage('services')">Services</a>
-        <a href="#contact" onclick="showPage('contact')">Contact</a>
-    </nav>
-    
-    <div id="home" class="container">
-        <h1>Upgrade Your Home with Modern Hardware</h1>
-        <p>Professional doorknob and doorstop installations for a modern aesthetic.</p>
-        <button onclick="showPage('services')">View Our Services</button>
-    </div>
-    
-    <div id="services" class="container" style="display: none;">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Handle It Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Modernize Your Home with Premium Hardware Upgrades</h1>
+            <p>High-quality doorknobs, doorstops, and expert installation services for a sleek, modern look.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
         <h2>Our Services</h2>
-        <div class="card">
-            <h3>Doorknob Replacement</h3>
-            <p>Upgrade outdated doorknobs with modern, high-quality Kwikset knobs.</p>
+        <div class="service-container">
+            <div class="service">
+                <h3>Doorknob Replacement</h3>
+                <p>Upgrade your old, outdated doorknobs with sleek, modern designs.</p>
+            </div>
+            <div class="service">
+                <h3>Free Doorstop Installation</h3>
+                <p>Every doorknob installation includes a complimentary doorstop.</p>
+            </div>
+            <div class="service">
+                <h3>Bulk Home Upgrades</h3>
+                <p>Perfect for realtors and property managers needing large-scale upgrades.</p>
+            </div>
         </div>
-        <div class="card">
-            <h3>Free Doorstop Installation</h3>
-            <p>Every doorknob installation comes with a complementary doorstop.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Before & After</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="before.jpg" alt="Before" id="before-img">
+                <img src="after.jpg" alt="After" id="after-img">
+                <input type="range" id="slider" min="0" max="100" value="50">
+            </div>
         </div>
-    </div>
-    
-    <div id="contact" class="container" style="display: none;">
+    </section>
+
+    <section id="contact" class="contact">
         <h2>Get in Touch</h2>
-        <p>Schedule an appointment or ask us any questions!</p>
-        <p>Email: contact@handleit.com</p>
-        <p>Phone: (555) 123-4567</p>
-    </div>
-    
-    <script>
-        function showPage(page) {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('services').style.display = 'none';
-            document.getElementById('contact').style.display = 'none';
-            document.getElementById(page).style.display = 'block';
-        }
-    </script>
+        <p>Email: contact@handleit.com | Phone: (555) 123-4567</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Handle It. All rights reserved.</p>
+    </footer>
 </body>
 </html>
