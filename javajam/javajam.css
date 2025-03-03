@@ -9,22 +9,57 @@ body {
 }
 
 
+* {box-sizing: border-box;}
+
+#homehero, #heromugs, #heroguitar {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+#homehero {
+    background-image: url('images/hero.jpg')
+}
+
+#heromugs {
+    background-image: url('images/heromugs.jpg')
+}
+
+#heroguitar {
+    background-image: url('images/heroguitar.jpg')
+}
+
 #wrapper {
-    background-color: #FEFAEB;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    min-width: 900px;
-    max-width: 1280px;
-    box-shadow: #221811;
+    background-color: #231814; /* Dark background for left column */
+    padding: 0;
 }
 
 header {
+    background-image: url('images/coffeelogo.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 240px;
+    color: #231814;
     background-color: #D2B48C;
-    color: #8C3826;
-    text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+header a:link, 
+header a:visited {
+    color: #231814;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header a:hover {
+    color: #FEF6C2;
 }
 
 h1 {
@@ -40,25 +75,37 @@ h3 {
 }
 
 h4 {
-    background-color: #D2B48C; 
-    color: #221811;
-    padding-left: .5em;
-    padding-bottom: .25em;
-    font-size: 1.2em;
-    
+    text-transform: uppercase;
+    border-bottom: 2px solid #231814;
+    padding-bottom: 0;
+    clear: left;
 }
 
 dt {
     color: #8C3826;
 }
-
+/*Nav-Bar*/
 nav {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    float: left;
+    width: 200px;
+}
+
+nav a:link {
+    color: #FEF6C2;
     text-decoration: none;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 footer {
@@ -86,9 +133,21 @@ img {
 }
 
 main {
-    padding-left: 2em;
+    margin-left: 200px;
+    padding: 0;
+    background-color: #FEF6C2;
+    overflow: auto; 
+}
+
+main h2, 
+main h3, 
+main h4, 
+main p, 
+main div, 
+main ul, 
+main dl {
+    padding-left: 3em;
     padding-right: 2em;
-    padding-bottom: 2em;
 }
 
 details {
@@ -96,3 +155,17 @@ details {
     padding-right: 20%;
 }
 
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.details {
+    overflow: auto;
+}
+
+.onethird {
+    float: left;
+    width: 33%;
+}
