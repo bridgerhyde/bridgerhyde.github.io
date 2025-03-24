@@ -15,6 +15,7 @@
 
     <div id="wrapper"> <!-- Main container -->
 
+
         <header>
             <a href="index.html"><h1>JavaJam Coffee Bar</h1></a>
         </header>
@@ -28,28 +29,40 @@
             </ul>
         </nav>
 
-        
-            
-
         <main>
-            <div id="homehero"></div> <!-- Div with large image -->
-            <h2>Follow the Winding Road to JavaJam</h2>
-            <p>
-                Friendly and electric — JavaJam Coffee Bar is the perfect place to take a
-                break, enjoy a refreshing beverage, and have a snack or light meal.
-            </p>
-            <ul>
-                <li>Specialty Coffee and Organic Tea</li>
-                <li>Bagels, Muffins, and Gluten-free Pastries</li>
-                <li>Organic Salads</li>
-                <li>Music and Poetry Readings</li>
-                <li>Open Mic Night</li>
-            </ul>
-
-            <div id="contact-info"> <!-- Div for contact info -->
-                <p>12010 Garrett Bay Road<br>Ellison Bay, WI 54210<br>888-555-5555</p>
+            <div id="herojobs">
             </div>
+            <h2>Jobs at JavaJam</h2>
+            <p>Want to work at JavaJam? Fill out the form below to
+               start your application. All information is required.</p>
+            <form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+                <label for="Name">Name: </label>
+                <input type="text" id="Name" name="Name" required>
+
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" required>
+
+                <label for="Start">Start Date:</label>
+                <input type="date" id="Start" name="Start" required>
+
+                <label for="Experience">Experience:</label>
+                <textarea name="Experience" id="Experience" rows="2" cols="20" required></textarea>
+
+                <input type="submit" value="Apply Now">  
+            </form>
+
+
         </main>
+
+
+
+
+
+
+
+
+
+
 
         <footer>
             <small><i>Copyright © 2025 JavaJam Coffee Bar</i></small><br>
