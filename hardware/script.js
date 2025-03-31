@@ -1,6 +1,7 @@
-const slider = document.getElementById('slider');
-const overlay = document.querySelector('.slider-overlay');
+const slider = document.getElementById('sliderRange');
+const afterWrapper = document.getElementById('afterWrapper');
 
 slider.addEventListener('input', function () {
-  overlay.style.width = `${this.value}%`;
+  const percent = this.value;
+  afterWrapper.style.width = percent + '%';
 });
