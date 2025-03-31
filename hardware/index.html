@@ -67,11 +67,15 @@
     <section id="gallery" class="gallery text-center py-5 bg-light">
         <div class="container">
             <h2 class="mb-4">Before & After</h2>
-            <div class="slider-container position-relative">
-                <img src="before.jpg" alt="Before" id="before-img" class="img-fluid">
-                <img src="after.jpg" alt="After" id="after-img" class="img-fluid position-absolute">
-                <input type="range" id="slider" min="0" max="100" value="50" class="form-range mt-3">
-            </div>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                  <img src="images/before.jpg" class="slider-image" alt="Before">
+                  <div class="slider-overlay">
+                    <img src="images/after.jpg" class="slider-image" alt="After">
+                  </div>
+                  <input type="range" min="0" max="100" value="50" class="slider-range" id="slider">
+                </div>
+              </div>
         </div>
     </section>
 
