@@ -1,12 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.getElementById('sliderRange');
-    const overlay = document.getElementById('sliderOverlay');
-  
-    if (slider && overlay) {
-      slider.addEventListener('input', function () {
-        overlay.style.width = this.value + '%';
-      });
-    } else {
-      console.error("Slider or overlay element not found!");
-    }
-  });
+
+const container = document.querySelector('container');
+document.querySelector('.slider').addEventListener('input', (e) => {
+    container.style.setProperty('--position', '${e.target.value}%');
+})
