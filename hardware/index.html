@@ -66,18 +66,18 @@
 
     <section id="gallery" class="gallery text-center py-5 bg-light">
         <div class="container">
-            <h2 class="mb-4">Before & After</h2>
-            <div class="slider-container" id="sliderContainer">
-                <div class="before-image">
-                  <img src="images/before.jpg" alt="Before Image">
-                </div>
-                <div class="after-image" id="afterWrapper">
-                  <img src="images/after.jpg" alt="After Image">
-                </div>
-                <input type="range" min="0" max="100" value="50" class="slider-range" id="sliderRange">
+          <h2 class="mb-4">Before & After</h2>
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <img src="images/before.jpg" alt="Before" class="slider-image">
+              <div class="slider-overlay" id="sliderOverlay">
+                <img src="images/after.jpg" alt="After" class="slider-image">
               </div>
+              <input type="range" min="0" max="100" value="50" class="slider-range" id="sliderRange">
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <section id="contact" class="contact py-5 text-center">
         <div class="container">

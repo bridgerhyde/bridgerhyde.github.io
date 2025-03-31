@@ -83,45 +83,33 @@ nav {
 
 /* 🔧 SLIDER FIXED */
 .slider-container {
+    max-width: 600px;
+    margin: 0 auto;
     position: relative;
-    width: 600px;
-    max-width: 100%;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
     overflow: hidden;
-    cursor: ew-resize;
 }
 
-/* Let .before-image be visible and define height */
-.before-image {
-    position: relative;
-    z-index: 1;
-}
-
-.before-image img {
+.slider-image {
     display: block;
     width: 100%;
     height: auto;
+    pointer-events: none;
+    user-select: none;
 }
 
-/* .after-image floats on top and clips */
-.after-image {
+.slider-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    height: 100%;
+    width: 50%; /* Controlled by JS */
     overflow: hidden;
     z-index: 2;
-}
-
-.after-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* optional: apply to both image layers */
-.slider-container img {
-    user-select: none;
-    pointer-events: none;
 }
 
 .slider-range {
