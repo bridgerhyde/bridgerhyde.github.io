@@ -63,7 +63,7 @@ nav {
     margin-top: 10px;
 }
 
-.services, .gallery, .contact {
+.services, .contact {
     padding: 50px 20px;
 }
 
@@ -105,7 +105,7 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
-    --poisiton: 50%;
+    --position: 50%;
 }
 
 .image-container {
@@ -123,7 +123,7 @@ main {
 .image-before {
     position: absolute;
     inset: 0;
-    width: var(--poisiton);
+    width: var(--position);
 }
 
 .slider {
